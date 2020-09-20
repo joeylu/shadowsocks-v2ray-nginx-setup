@@ -8,15 +8,15 @@ Shadowsocks + v2ray-plugin 服务端
 已经有大佬写好了一键脚本, 直接运行命令即可, 请参考https://github.com/M3chD09/shadowsocks-with-v2ray-plugin-install
 安装完成后配置文件的目录/etc/shadowsocks-libev/config.json
 
-{
-    "server":"0.0.0.0",
-    "server_port":443,
-    "password":"password",
-    "timeout":300,
-    "method":"aes-256-gcm",
-    "plugin":"v2ray-plugin",
-    "plugin_opts":"server;cert=/path/cert.pem;key=/path/key.pem;host=yourhost;loglevel=none"
-}
+    {
+        "server":"0.0.0.0",
+        "server_port":443,
+        "password":"password",
+        "timeout":300,
+        "method":"aes-256-gcm",
+        "plugin":"v2ray-plugin",
+        "plugin_opts":"server;cert=/path/cert.pem;key=/path/key.pem;host=yourhost;loglevel=none"
+    }
 默认配置文件是没有经过nginx转发, 直接连接SS服务端, 开启443端口, 所以需要证书. 如果经过nginx转发需要简单修改一下配置文件, 端口是nginx转发端口, 不再需要证书, 因为证书已经配置在nginx上了. 可能有路径.
 
 {
