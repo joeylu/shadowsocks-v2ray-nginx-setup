@@ -44,7 +44,7 @@ Shadowsocks + v2ray-plugin 服务端
         listen       80;
         server_name  youhost.com; # 换成你自己的域名
 
-    location /sspath { # v2ray插件配置的path
+    location /sspath (sspath如果在shadowsocks的config.json改过，换成自己设定的path) {
         proxy_pass                  http://127.0.0.1:10001; # shadowsocks服务port
         proxy_redirect              off;
         proxy_http_version          1.1;
