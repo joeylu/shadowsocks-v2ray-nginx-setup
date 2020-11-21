@@ -33,6 +33,7 @@ Shadowsocks + v2ray-plugin 服务端
 该脚本通过certbot已经安装好域名的证书
 
 不过为了让接下来安装的nginx无脑安装，我们接下来还要再reinstall一次
+
     sudo add-apt-repository ppa:certbot/certbot
     sudo apt-get update
     sudo apt-get install python-certbot-nginx nginx
