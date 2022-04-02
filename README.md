@@ -55,6 +55,8 @@ Shadowsocks + v2ray-plugin 服务端
     }
 
     sudo certbot --nginx --agree-tos --no-eff-email --email xxx@xxx.com
+    systemctl status shadowsocks
+    systemctl start shadowsocks
 
 运行时会问你要不要reinstall ssl，选择yes
 运行时会问你要不要redirect，选择2 （要）
