@@ -63,6 +63,7 @@ Shadowsocks + v2ray-plugin 服务端
 
 最后 sudo nginx -s reload
 
+NOTE: 如果你使用cloudflare，需要把其ssl改为完全，否则会一直出现redirect error
 
 服务器配置完成
 
