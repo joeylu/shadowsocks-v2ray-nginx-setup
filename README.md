@@ -6,6 +6,14 @@ setup shadowsocks server over https
 
 Shadowsocks + v2ray-plugin 服务端
 已经有大佬写好了一键脚本, 直接运行命令即可, 请参考https://github.com/M3chD09/shadowsocks-with-v2ray-plugin-install
+
+---2023 更新
+如果用aws的话，请确保Inbound允许80和443
+如果dns用的是cloudflare之类的，配置的时候最好关闭proxy off
+另外原链接的sh安装过程中，指向的mbedtls文件失效，编辑该行，换成以下链接
+https://sources.openwrt.org/mbedtls-2.16.5-gpl.tgz
+
+
 安装完成后配置文件的目录/etc/shadowsocks-libev/config.json
 
     {
